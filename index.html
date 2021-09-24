@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voltran Club</title>
+  <link rel="stylesheet" href="voltran.css">
+</head>
+<body>
+  <header>
+    <h1><b>VoltranClub</b></h1>
+  </header>
+  <section class="banner">
+    <img src="images/voltran.jpg" alt="Voltran">
+  </section>
+  <nav class="main-nav" id="main-nav">
+    <ul>
+      <li><a href="#jointoday" class="join">Join the Club</a></li>
+      <li><a href="#">Latest News</a></li>
+      <li><a href="#">New Episodes</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <img onclick="myFunction()" src="images/dark.png" style="width: 85px">
+  <main>
+
+    <article>
+      <h2>It's me, Voltran</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis ullam amet quis veritatis magnam, iste dolorem doloribus modi fugiat ab, omnis nemo voluptas, deserunt exercitationem eligendi eaque quo totam eius nam explicabo earum.
+        Doloremque quasi omnis sunt commodi velit enim?</p>
+    </article>
+
+    <ul class="images">
+      <li><img src="images/voltran3.jpg"></li>
+      <li><img src="images/voltran2.jpg"></li>
+    </ul>
+  </main>
+  <section class="join" id="join">
+    <h2 id="jointoday">Join Today!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates repudiandae vero ea necessitatibus perferendis id illum culpa, in alias delectus soluta dignissimos quia tempore facilis nulla repellendus sed sapiente eaque.</p>
+    <form action="#">
+      <input type="email" name="email" placeholder="Type email & click send" required id="email">
+      <input type="submit" value="Send" class="submit" id="submit">
+    </form>
+  </section>
+  <footer>
+    <p class="copyright">&copy; Copyright 2021 VoltranClub</p>
+  </footer>
+  <script>
+  			var toggled = true;
+function myFunction() {
+				if(!toggled){
+					toggled = true;
+          var col=document.getElementById("main-nav");
+          col.style.backgroundColor="#FFFFFF";
+          var col=document.getElementById("join");
+          col.style.backgroundColor="#FFFFFF";
+          var element = document.body;
+          var col=document.getElementById("email");
+          col.style.backgroundColor="#FFFFFF";
+          col.style.color="#000000";
+          var col=document.getElementById("submit");
+          col.style.backgroundColor="#FFFFFF";
+          col.style.color="#000000";
+          var element = document.body;
+          element.classList.remove("dark-mode");
+					return;
+				}
+				if(toggled){
+					toggled = false;
+
+          var col=document.getElementById("main-nav");
+          col.style.backgroundColor="#000000";
+          var col=document.getElementById("join");
+          col.style.backgroundColor="#000000";
+          var col=document.getElementById("email");
+          col.style.backgroundColor="#000000";
+          col.style.color="#FFFFFF";
+          var col=document.getElementById("submit");
+          col.style.backgroundColor="#000000";
+          col.style.color="#FFFFFF";
+          var element = document.body;
+          element.classList.add("dark-mode");
+          return;
+
+
+				}
+			}
+
+
+</script>
+
+</body>
+</html>
